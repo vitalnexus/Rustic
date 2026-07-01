@@ -14,7 +14,6 @@ fn main() {
             Ok(num) => num,
             Err(_) => continue,
         };    
-        // println!("Start miles is: {mileage_s}");
 
         println!("Enter ending miles:");
         let mut mileage_e = String::new();
@@ -26,10 +25,8 @@ fn main() {
             Ok(num) => num,
             Err(_) => continue,
         };
-        //println!("End miles is: {mileage_e}");
     
         let total_miles: u32 = {mileage_e} - {mileage_s};
- 
         println!("Mileage driven is: {total_miles}");
         break;
     }
