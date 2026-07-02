@@ -1,11 +1,9 @@
 fn main() {
-    let mut number = 3;
-
-    while number != 0 {
-        println!("{number}!");
+    let a =[5; 10];
+    let mut sum = 0;
+    for x in a {
+        sum += x;
         
-        number -= 1;
     }
-    
-    println!("LIFTOFF!!!");
+    println!("{sum}");
 }
