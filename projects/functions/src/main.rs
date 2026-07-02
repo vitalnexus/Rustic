@@ -1,11 +1,10 @@
 fn main() {
-    println!("Hello, world!");
+    print_labeled_measurement(5, 'h');
     
-    another_function(5);
 }
 
-fn another_function(x: i32) {   
-    println!("This is another function. The value of x is: {x}");
+fn print_labeled_measurement(value: i32, label: char) {   
+    println!("The measurement is: {value}{label}");
 }
 
     
